@@ -5,6 +5,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Portpholio</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
@@ -16,7 +22,7 @@
 			</a>
 			<nav class="header-nav">
 				<ul class="header-list list">
-					<li class="header-item"><a class="header-link link" href="./index.html">Студия</a></li>
+					<li class="header-item"><a class="header-link link btn-white" href="./index.html">Студия</a></li>
 					<li class="header-item"><a class="header-link link current-link" href="./portfolio.html">Портфолио</a></li>
 					<li class="header-item"><a class="header-link link" href="">Контакты</a></li>
 				</ul>
@@ -32,7 +38,7 @@
 		<!-- main -->
 		<main>
 			<ul class="list">
-				<li><button class="btn-portfolio current" type="button">Все</button></li>
+				<li><button class="btn-white current" type="button">Все</button></li>
 				<li><button class="btn-portfolio" type="button">Веб-сайты</button></li>
 				<li><button class="btn-portfolio" type="button">Приложения</button></li>
 				<li><button class="btn-portfolio" type="button">Дизайн</button></li>
@@ -41,8 +47,8 @@
 			<!-- section portfolio -->
 
 			<section>
-				<h1 hidden>Portfolio</h1>
 				<ul class="list">
+					<h1 class="visually-hidden">Portfolio</h1>
 					<li>
 						<a class="link" href="">
 							<img class="" src="./images/portfolio/img-1.jpg" alt="Технокряк" width="370" height="294" />
@@ -116,11 +122,11 @@
 				<span class="logo-span logo-white">Studio</span>
 			</a>
 			<!-- адрес -->
-			<address>
+			<address class="address">
 				<ul class="list">
 					<li>
 						<a
-							class="address link"
+							class="footer-address link"
 							href="https://goo.gl/maps/Wzsu8VRCmmaW63Lz9"
 							target="_blank"
 							rel="noopener noreferrer"

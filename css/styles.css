@@ -1,23 +1,21 @@
-:root{
-    --main-font: 'Roboto'
-    --secondary-font: 
-}
 
 
 
-.page{
-color: #757575;
+
+body{
+font-family: Roboto, sans-serif;
+font-size: 14px;
+line-height: 1,71;
+letter-spacing: 0.03em;
 background-color: #FFFFFF;
-font-family: Roboto, sans-serif
+color: #212121; 
 }
 /* header */
-.header{
-    background-color: #FFFFFF;
+
     
-}
+    
+
 .header-logo{
-    display: flex;
-    font-family: "Raleway",sans-serif;
     text-decoration: none;
     font-size: 26px;
     line-height: 1.19;
@@ -31,14 +29,12 @@ color: #000000
 .header-logo,.logo-span{
 font-weight: 700;
 font-size: 26px;
-line-height: 31px;
+line-height: 1,19;
 letter-spacing: 0.03em;
 }
 
 
-.header-link{
-color: #212121;
-}
+
 
 
 /* comooon styles start */
@@ -49,11 +45,8 @@ text-decoration: none;
     list-style: none;
 }
 /* header section */
-.header{
-    background-color: #FFFFFF;
-}
+
 .header-list{
-font-family: 'Roboto';
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -87,8 +80,6 @@ color: #757575;
 background-color: #2F303A;
 }
 .hero-title{
-font-family: 'Roboto';
-font-style: normal;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -135,60 +126,39 @@ background-color: #2196F3;
 /* section work */
 
 .title-list{
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
-        letter-spacing: 0.03em;
         text-transform: uppercase;
-    
-        color: #212121;
 }
 
 .section-list{
-    font-family: 'Roboto';
-        font-size: 14px;
-        line-height: 1.71;
-    letter-spacing: 0.03em;
-    
-        color: #757575;
+line-height: 1.71;
+color: #757575;
 }
 
 /* section about */
  
 .title-section{
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
+
         font-size: 36px;
         line-height: 1.16;
         text-align: center;
-        letter-spacing: 0.03em;
-    
-        color: #212121;
 }
 
 /* section team */
 
 .title-name{
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
+
+    font-weight: 500;
         font-size: 16px;
         line-height: 1.18;
         text-align: center;
-        letter-spacing: 0.03em;
-    
-        color: #212121;
 }
 
 .profession{
-    font-family: 'Roboto';
         font-size: 16px;
         line-height: 1.18;
         text-align: center;
-        letter-spacing: 0.03em;
     
         color: #757575;
 }
@@ -202,18 +172,15 @@ background-color: #2196F3;
     color: #FFFFFF;;
 }
 
-.address{
-    font-family: 'Roboto';
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
+
     
-        color: #FFFFFF;
+address{
+    font-style: normal;
 }
-.address:hover,
-.address:focus
+
 
 /* section portfolio */
+
 
 .btn-portfolio{
     font-family: inherit;
@@ -227,23 +194,26 @@ background-color: #2196F3;
         cursor: pointer;
         background-color: transparent;
         border: none;
-        color: #212121
-        background-color: #F5F4FA
+        color: #212121;
+        background-color: #F5F4FA;
 }
 
 .btn-portfolio:hover,
 .btn-portfolio:focus{
-    background-color: #2196F3;;
+    background-color: #2196F3;
+    color: #FFFFFF;
 }
 
 .current{
     background-color: #188CE8;
+    color: #FFFFFF;
 }
-  
+    
+
+
+
+
 .title-portfolio{
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
@@ -252,10 +222,33 @@ background-color: #2196F3;
 }
 
 .text-portfolio{
-    font-family: 'Roboto';
         font-size: 16px;
         line-height: 1.8;
         letter-spacing: 0.03em;
     
         color: #757575;
+}
+
+.address{
+font-style: normal;
+}
+.footer-address {
+    font-size: 14px;
+    line-height: 1,7;
+    color: #FFFFFF;
+    
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
