@@ -1,40 +1,34 @@
+:root{
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --primary-white-color: #FFFFFF;
+    --accent-color: #2196F3;
 
+    /* fonts */
+    --main-font-famaly: Roboto, sans-serif;
+    --second-font-famaly: Raleway, sans-serif;
+}
 
 
 
 body{
-font-family: Roboto, sans-serif;
+font-family: var(--main-font-famaly);
 font-size: 14px;
 line-height: 1,71;
 letter-spacing: 0.03em;
-background-color: #FFFFFF;
-color: #212121; 
+background-color: var(--primary-white-color);
+
 }
 /* header */
 
-    
-    
-
-.header-logo{
-    text-decoration: none;
-    font-size: 26px;
-    line-height: 1.19;
-color: #2196F3;
-
-}
-.logo-span{
-color: #000000
-    }
-
-.header-logo,.logo-span{
+.logo{
+font-family: var(--second-font-famaly);
 font-weight: 700;
 font-size: 26px;
 line-height: 1,19;
 letter-spacing: 0.03em;
+color: #000000
 }
-
-
-
 
 
 /* comooon styles start */
@@ -46,32 +40,16 @@ text-decoration: none;
 }
 /* header section */
 
-.header-list{
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-
-}
-
-.header-item{
-    color: #212121;
-}
-.header-link:hover,
-.header-link:focus {
-color: #2196F3;
+.header-link
+.header-contact{
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
 }
 
 .header-contact{
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: #757575;
-}
-.header-contact:hover,
-.header-contact:focus{
-    color: #2196F3;
+color: var(--secondary-text-color);
 }
 
 /* hero section */
@@ -102,25 +80,20 @@ font-family: inherit;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
-display: flex;
-align-items: center;
-text-align: center;
 letter-spacing: 0.06em;
 cursor: pointer;
 background-color: transparent;
 border: none;
-color: #FFFFFF;
-background-color: #2196F3;
-
+color: var(--primary-white-color);
+background-color: var(--accent-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+padding: 10px 22px;
 }
 .btn:hover,
 .btn:focus {
- background-color: #188CE8;
- color: #FFFFFF;
-}
-
-.current-link{
-    color: #2196F3;
+ background-color: var(--accent-color);
+ color: var(--primary-white-color);
 }
 
 /* section work */
@@ -133,7 +106,7 @@ background-color: #2196F3;
 
 .section-list{
 line-height: 1.71;
-color: #757575;
+color: var(--secondary-text-color);
 }
 
 /* section about */
@@ -160,7 +133,7 @@ color: #757575;
         line-height: 1.18;
         text-align: center;
     
-        color: #757575;
+        color: var(--secondary-text-color);
 }
 
 /* footer-section */
@@ -168,8 +141,9 @@ color: #757575;
     background-color: #2F303A;
 }
 
+
 .logo-white{
-    color: #FFFFFF;;
+    color: var(--primary-white-color);
 }
 
 
@@ -184,34 +158,24 @@ address{
 
 .btn-portfolio{
     font-family: inherit;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.87;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.06em;
-        cursor: pointer;
-        background-color: transparent;
-        border: none;
-        color: #212121;
-        background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+     padding: 6px 22px;
+     border-radius: 4px;
+     letter-spacing: 0.06em;
+     cursor: pointer;
+     background-color: transparent;
+     border: none;
+     color: var(--primary-text-color);
+     background-color: #F5F4FA;
 }
 
 .btn-portfolio:hover,
 .btn-portfolio:focus{
-    background-color: #2196F3;
-    color: #FFFFFF;
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
 }
-
-.current{
-    background-color: #188CE8;
-    color: #FFFFFF;
-}
-    
-
-
-
 
 .title-portfolio{
         font-size: 18px;
@@ -226,19 +190,45 @@ address{
         line-height: 1.8;
         letter-spacing: 0.03em;
     
-        color: #757575;
+        color: var(--primary-text-color);
 }
 
 .address{
 font-style: normal;
 }
+
+.address-link{
+    color: var(--primary-white-color);
+}
+
 .footer-address {
     font-size: 14px;
     line-height: 1,7;
-    color: #FFFFFF;
-    
+    color: var(--primary-white-color);
 }
 
+.footer-section .logo{
+color: var(--primary-white-color);
+}
+
+.footer-section .header-contact{
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-contact:hover,
+.header-contact:focus,
+.accent,
+.current {
+    color: var(--accent-color);
+}
+
+.btn-portfolio .active{
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
