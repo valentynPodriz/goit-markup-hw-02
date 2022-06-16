@@ -14,7 +14,7 @@
 body{
 font-family: var(--main-font-famaly);
 font-size: 14px;
-line-height: 1,71;
+line-height: 1.71;
 letter-spacing: 0.03em;
 background-color: var(--primary-white-color);
 
@@ -25,7 +25,7 @@ background-color: var(--primary-white-color);
 font-family: var(--second-font-famaly);
 font-weight: 700;
 font-size: 26px;
-line-height: 1,19;
+line-height: 1.19;
 letter-spacing: 0.03em;
 color: #000000
 }
@@ -40,7 +40,7 @@ text-decoration: none;
 }
 /* header section */
 
-.header-link
+.header-link,
 .header-contact{
     font-weight: 500;
     line-height: 1.14;
@@ -203,7 +203,7 @@ font-style: normal;
 
 .footer-address {
     font-size: 14px;
-    line-height: 1,7;
+    line-height: 1.7;
     color: var(--primary-white-color);
 }
 
@@ -225,7 +225,7 @@ color: var(--primary-white-color);
     color: var(--accent-color);
 }
 
-.btn-portfolio .active{
+.btn-portfolio.active{
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 }
